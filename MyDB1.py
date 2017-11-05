@@ -6,7 +6,7 @@ def database():
     Db = db
     cursor.execute("CREATE DATABASE IF NOT EXISTS {} ".format(Db))
     cursor.execute("USE {}".format(Db))
-    cursor.execute("""CREATE TABLE IF NOT EXISTS studentinformation
+    cursor.execute("""CREATE TABLE IF NOT EXISTS tables
         (
         idnum char primary key,
         course char(20),
